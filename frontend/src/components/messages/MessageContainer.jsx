@@ -9,11 +9,12 @@ const MessageContainer = () => {
 	const { selectedConversation, setSelectedConversation } = useConversation();
 
 	useEffect(() => {
+		// cleanup function (unmounts)
 		return () => setSelectedConversation(null);
 	}, [setSelectedConversation]);
 
 	return (
-		<div className='flex flex-col w-full'>
+		<div className='md:min-w-[450px] flex flex-col'>
 			{!selectedConversation ? (
 				<NoChatSelected />
 			) : (
@@ -44,3 +45,4 @@ const NoChatSelected = () => {
 		</div>
 	);
 };
+ 
