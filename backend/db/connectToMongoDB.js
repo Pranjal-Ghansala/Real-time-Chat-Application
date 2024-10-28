@@ -1,4 +1,7 @@
-const connectToMongoDB = async () => {
+// db/connectToMongoDB.js
+import mongoose from 'mongoose';
+
+export const connectToMongoDB = async () => {
 	try {
 		await mongoose.connect(process.env.MONGO_DB_URI, {
 			useNewUrlParser: true,
