@@ -1,4 +1,5 @@
-import Layout from "/frontend/src/components/layout/Layout";
+import Layout from '../../components/layout/Layout';
+
  
 
 const Home = () => {
