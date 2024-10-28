@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useEffect, useState } from "react";
 import Sidebar from "../sidebar/Sidebar";
 import MessageContainer from "../messages/MessageContainer";
 import { IoMenu } from "react-icons/io5"; // Menu icon for mobile
